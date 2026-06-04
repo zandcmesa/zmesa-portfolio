@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Checkout — Zach Mesa</title>
+  <link rel="icon" type="image/png" href="../../media/cropped-Artboard-2.png">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<nav class="detail-nav" id="main-nav">
+  <a href="../../" class="back-link">← Zach Mesa</a>
+  <ul class="nav-links">
+    <li><a href="../../#work">Work</a></li>
+    <li><a href="../../#experience">Experience</a></li>
+    <li><a href="../../#about">About</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HEADER -->
+  <div class="detail-hero">
+    <div class="detail-header">
+      <h1 class="detail-title reveal">Creating a platform checkout for all of Google.</h1>
+      <div class="detail-meta-row reveal">
+        <div>
+          <p class="detail-meta-label">Year</p>
+          <p class="detail-meta-value">2023</p>
+        </div>
+        <div>
+          <p class="detail-meta-label">My Role</p>
+          <p class="detail-meta-value">UX Manager</p>
+        </div>
+        <div class="detail-cats">
+          <span class="cat-tag">Systems Design</span>
+          <span class="cat-tag">UX/UI</span>
+        </div>
+      </div>
+    </div>
+    <img src="../../media/shopping-scaled.jpg" alt="Google Checkout hero" class="detail-hero-image">
+  </div>
+
+  <!-- THE CHALLENGE -->
+  <div class="detail-section">
+    <div class="two-col reveal">
+      <div>
+        <p class="two-col-label">The Challenge</p>
+      </div>
+      <div>
+        <p class="detail-body-text">The team that I was hired to lead had started to launch a new checkout experience for Google. The team had started this product rollout with one of Google's businesses and needed to roll it out to all of Google. The challenge here was that the Platform checkout experience is embedded into various Google UIs in a myriad of ways, which makes for a myriad of challenges, especially navigation. Not only did the checkout have to be embedded in many different containers, but across all clients. The strategy needed work. So we took a step back and re-designed the checkout from the ground up. This was a serious exercise in systems design since we had to account for all of Google's various UI constraints across clients, our technical constraints for Platform, and balance all of that with our vision for the best checkout.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OUTCOME -->
+  <div class="outcome-section reveal">
+    <h2 class="outcome-section-label">Project Outcome</h2>
+    <div class="outcome-grid">
+      <div class="outcome-item">
+        <h4>Higher conversion</h4>
+        <p>In our very first experiment we saw a 9% increase in conversion when we tested our new model against the control. This was a huge leap for us and clearly showed the impact of our work.</p>
+      </div>
+      <div class="outcome-item">
+        <h4>Design system contributions</h4>
+        <p>My team contributed over a dozen new components to our Platform design spec and Figma design kit to increase reusability, consistency, and efficiency across the team.</p>
+      </div>
+      <div class="outcome-item">
+        <h4>More robust tech infra</h4>
+        <p>Because of our work there was new technical infrastructure created that allowed us to swap navigation models without having to make changes at the individual component level. This allowed us to experiment with different models in different contexts.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="detail-section" style="padding: 40px;">
+    <div class="rounded-image reveal">
+      <img src="../../media/checkout-workshop.jpg" alt="Checkout workshop" class="full-image">
+    </div>
+  </div>
+
+  <!-- NAVIGATION MODEL -->
+  <div class="detail-section reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">The Navigation Model</p>
+      </div>
+      <div>
+        <p class="detail-body-text">One of the biggest decisions the team had to make was which navigation model we would use. Industry research revealed that there were 3 main models to choose from (Multi-page, Accordion, and Single-page), but the engineering team didn't have the bandwidth to build them all.</p>
+        <br>
+        <p class="detail-body-text">I had the team pressure test the models within our known constraints and this unblocked the decision for what navigation model to use first. While the multi-page model was the most ubiquitous model in the industry, the Accordion model decreased our dependency on other Google 1P UIs — allowing us to do pretty much all of the required tasks inline without affecting the surrounding UI that we didn't control.</p>
+        <br>
+        <p class="detail-body-text">Before we had the chance to do our own research we referenced all of the great ecommerce checkout research that has been published by the Baymard Institute, but we also did several studies on our own to compare models across form factors and checkout scenarios.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCORDION VIDEO -->
+  <div style="background: #000; padding: 0 40px 40px;">
+    <div class="rounded-image reveal">
+      <video autoplay muted loop playsinline style="width:100%; display:block;">
+        <source src="../../media/accordion.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- PRINCIPLED APPROACH -->
+  <div class="two-col-even reveal" style="background: var(--black);">
+    <div class="detail-body-col" style="background: #000;">
+      <h3 class="detail-h3">I helped the team take a principled approach for things like selection and visual design</h3>
+      <p style="line-height:1.7; opacity:0.8;">I anchored the team on the principle of "Don't make me think" based on the research we had conducted. Using this principle, the team used more intuitive and familiar interaction and visual conventions in multiple categories like color (using primary blue to communicate interactivity), shape (aligning to Material standards), and navigation affordances like auto-advance.</p>
+      <br>
+      <p style="line-height:1.7; opacity:0.8;">It was important to normalize a pattern and pressure test it across all of the data objects with their unique constraints to make sure it would work. There was a lot to weigh here especially across clients and also aligning our vision with Material Design standards, so we had to test various patterns and the design evolved with Material Design conventions.</p>
+    </div>
+    <div style="background: #212121; display:flex; align-items:center; justify-content:center; padding: 40px;">
+      <img src="../../media/fop-selection.png" alt="Form of payment selection" style="max-width:100%;">
+    </div>
+  </div>
+
+  <div class="two-col-even reveal" style="background: var(--black);">
+    <div style="background: #282828; display:flex; align-items:center; justify-content:center; padding: 40px;">
+      <img src="../../media/item-design.png" alt="Item design system" style="max-width:100%;">
+    </div>
+    <div class="detail-body-col" style="background: #000;">
+      <h3 class="detail-h3">I focused the team on identifying and solving for inconsistencies in the system</h3>
+      <p style="line-height:1.7; opacity:0.8;">Each data object is connected to a unique UI component. Unfortunately, each component was built in somewhat of a silo for the purposes of a specific launch. I focused my team on paying off as much of this UX/tech debt as possible.</p>
+      <br>
+      <p style="line-height:1.7; opacity:0.8;">My team thought deeply about how we could normalize the UI across all of these objects — accounting for a summary state, an edit state, and an entry state for each one. Several teams ended up adopting the designs that came out of this normalization exercise.</p>
+    </div>
+  </div>
+
+  <!-- PRINCIPLES SECTION -->
+  <div class="principles-section reveal">
+    <div>
+      <h3 class="principles-label">Principles</h3>
+      <p class="principles-label" style="font-size:1rem; font-weight:400; opacity:0.7; margin-top:20px; line-height:1.6;">We created dynamic product principles using the research we had done. We generated raw insights from the research, turned those into categorized postulates, identified patterns and distilled those into product principles.</p>
+    </div>
+    <div class="principles-grid">
+      <div>
+        <p class="principle-num">01</p>
+        <p class="principle-title">Don't make me think</p>
+        <p class="principle-desc">The buyflow should feel intuitive and familiar. Don't sacrifice clarity for simplicity.</p>
+      </div>
+      <div>
+        <p class="principle-num">02</p>
+        <p class="principle-title">Don't make me wait</p>
+        <p class="principle-desc">Make the experience as fast as possible while balancing speed and control. Lower stakes checkouts can be faster than higher stakes.</p>
+      </div>
+      <div>
+        <p class="principle-num">03</p>
+        <p class="principle-title">Keep me safe</p>
+        <p class="principle-desc">Safety is the perception of security and is a crafted value proposition. Addressing users concerns or worries makes the experience feel polished and professional.</p>
+      </div>
+      <div>
+        <p class="principle-num">04</p>
+        <p class="principle-title">Cost is king</p>
+        <p class="principle-desc">Make it clear how much I'm spending now and in the future. Help me understand ways I can maximize savings and benefits without overwhelming me.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADDITIONAL IMAGES -->
+  <div style="background: #000; padding: 40px;">
+    <div class="rounded-image reveal">
+      <img src="../../media/storyboard.png" alt="Storyboard" class="full-image">
+    </div>
+  </div>
+
+  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+    <div class="rounded-image reveal">
+      <img src="../../media/lit-review.png" alt="Literature review" class="full-image">
+    </div>
+    <div class="rounded-image reveal">
+      <img src="../../media/strategic-connection.png" alt="Strategic connection" class="full-image">
+    </div>
+  </div>
+
+  <!-- NEXT PROJECT -->
+  <a href="../security-center/" class="next-project">
+    <div>
+      <p class="next-label">Next project</p>
+      <p class="next-title">Security Center</p>
+    </div>
+    <span class="next-arrow">→</span>
+  </a>
+
+</main>
+
+<footer>
+  <span class="footer-name">Zach Mesa © 2025</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/zachmesa/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:zandcmesa@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>
