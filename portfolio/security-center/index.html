@@ -6,11 +6,14 @@
   <title>Security Center — Zach Mesa</title>
   <link rel="icon" type="image/png" href="../../media/cropped-Artboard-2.png">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav class="detail-nav" id="main-nav">
-  <a href="../../" class="back-link">← Zach Mesa</a>
+  <a href="../../" class="back-link">Zach Mesa</a>
   <ul class="nav-links">
     <li><a href="../../#work">Work</a></li>
     <li><a href="../../#experience">Experience</a></li>
@@ -25,7 +28,7 @@
       <h1 class="detail-title reveal">A security startup within Google Workspace.</h1>
       <div class="detail-meta-row reveal">
         <div>
-          <p class="detail-meta-label">Year</p>
+          <p class="detail-meta-label">Years</p>
           <p class="detail-meta-value">2016 – 2020</p>
         </div>
         <div>
@@ -42,163 +45,303 @@
     <img src="../../media/security-center-desktop-mockup-darker.jpg" alt="Security Center" class="detail-hero-image">
   </div>
 
-  <!-- CHALLENGE -->
+  <!-- THE CHALLENGE -->
   <div class="detail-section reveal">
     <div class="two-col">
       <div>
         <p class="two-col-label">The Challenge</p>
       </div>
       <div>
-        <p class="detail-body-text">The initial idea for this product was to externalize a couple of APIs that allowed us to see and act on Gmail data. We thought it would be valuable for organizations to have access to this data in order to understand information and trends that might affect their organization's security.</p>
-        <br>
-        <p class="detail-body-text">This seems like a simple idea, but for me and my team it was a huge learning experience. We didn't know anything about the people that would actually use such a product and we knew very little about data visualization. We had to work quickly to learn about both while trying to launch the MVP.</p>
+        <p class="detail-body-text">The initial idea for this product was to externalize a couple of APIs that allowed us to see and act on Gmail data. We thought it would be valuable for organizations to have access to this data in order to understand information and trends that might affect their organization's security. This seems like a simple idea, but for me and my team it was a huge learning experience. We didn't know anything about the people that would actually use such a product and we knew very little about data visualization. We had to work quickly to learn about both while trying to launch the MVP.</p>
         <br>
         <p class="detail-body-text">Little did we know that externalizing a couple of APIs would turn into a suite of security products for Workspace that would populate a brand new Enterprise SKU, expanding Workspace's business considerably.</p>
       </div>
     </div>
   </div>
 
-  <!-- HERO IMAGE FULL -->
-  <div style="background: #000; padding: 0 40px 40px;">
-    <img src="../../media/security-center-desktop-mockup.jpg" alt="Security Center mockup" class="full-image rounded-image reveal">
-  </div>
-
-  <!-- IMPACT -->
+  <!-- PROJECT IMPACT -->
   <div class="outcome-section reveal">
     <h2 class="outcome-section-label">Project Impact</h2>
     <div class="outcome-grid">
       <div class="outcome-item">
         <h4>Tons of value</h4>
-        <p>Security Center was a key value driver for an entirely new premium subscription tier for Google Workspace (Enterprise SKU) with several large company contracts citing it — especially the investigation tool — as the reason for signing.</p>
+        <p>Security Center was a key value driver for an entirely new premium subscription tier for Google Workspace (Enterprise SKU) with several large company contracts citing Security Center — especially the investigation tool — as the reason for signing.</p>
       </div>
       <div class="outcome-item">
         <h4>Scalable UI</h4>
-        <p>The initial UIs were designed in a very general way so that more data sources and objects could be added using the same UI framework. The junction table I introduced for the drive sharing relationship audit experience scaled to show relationships for all kinds of data.</p>
+        <p>The initial UIs we created were done in a very general way so that more data sources and objects could be added using the same UI framework. For example, the junction table I introduced for the drive sharing relationship audit experience scaled to show relationships for all kinds of data.</p>
       </div>
       <div class="outcome-item">
         <h4>Made for exponential growth</h4>
-        <p>The dashboards and investigation tool became exponentially more valuable as new security products were added to the Workspace portfolio — enabling alert rules, investigation queries, and custom dashboard tracking all from one place.</p>
+        <p>The dashboards and the investigation tool became exponentially more valuable as new security products were added to the Workspace portfolio — alert centers, query tools, and dashboards all linking together into a connected security ecosystem.</p>
       </div>
     </div>
   </div>
 
-  <!-- DASHBOARD SECTION -->
-  <div class="detail-section reveal">
-    <div class="two-col">
-      <div>
-        <p class="two-col-label">Security Dashboards</p>
-      </div>
-      <div>
-        <p class="detail-body-text">I learned more about data visualization working on this project than ever before. It started with visualizing some canned queries as an MVP and grew into a flexible dashboard framework where the dashboard could be customized based on the queries that were most important to each user.</p>
-        <br>
-        <p class="detail-body-text">The dashboard consisted of a main page that housed chart widgets. From each widget you could click into a details page to analyze the data further using a set of filters, and click on a point in time to drill down into individual line items.</p>
-      </div>
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/dashboard-detail-chrome.jpg" alt="Dashboard detail" class="full-image">
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/security-health.jpg" alt="Security health" class="full-image">
-    </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/security-health2.jpg" alt="Security health detail" class="full-image">
-    </div>
-  </div>
-
-  <!-- SETTINGS RECOMMENDATION -->
+  <!-- RESEARCH (no left-column label — label was spurious) -->
   <div class="detail-section dark reveal">
-    <div class="two-col">
-      <div>
-        <p class="two-col-label">Security Health</p>
-      </div>
-      <div>
-        <p class="detail-body-text">The security health page allowed admins to see a comprehensive view of their organization's security posture across all of their settings. Each setting showed its current status and provided a recommendation for the best security practice.</p>
-      </div>
-    </div>
+    <h3 class="detail-h3" style="max-width:800px;margin-bottom:32px;">Our research became the <mark class="word-marker">backbone</mark> of all of our product work. We studied:</h3>
+    <ol class="numbered-list">
+      <li><strong>Dashboards.</strong> We tested our MVP dashboard and learned a lot about how admins reasoned about the data we were showing them.</li>
+      <li><strong>Future concepts.</strong> We tested a range of future concepts to inform our roadmap — think command-line interface vs. AI assistant. We got great signal about future direction, creating a version of Maslow's hierarchy of needs for security admins.</li>
+      <li><strong>Security settings health.</strong> We learned about how admins configure their domain settings to secure their organization's data. Our hypothesis of a helpful security score was actually disproven in this study.</li>
+      <li><strong>Security investigation.</strong> We learned about admins' current process for conducting security investigations and that helped us understand how we might help them through organic search and the ability to take actions.</li>
+      <li><strong>Admin collaboration.</strong> We learned that admins actually work in teams. For security reasons, there's usually a separation of duties when it comes to analyzing versus acting. Permissions and collaboration are important.</li>
+    </ol>
   </div>
 
-  <div style="background: var(--dark); padding: 0 40px 60px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/settings-recommendation.jpg" alt="Settings recommendation" class="full-image">
-    </div>
-  </div>
+  <!-- SECURITY DASHBOARDS — SECTION HEADER -->
+  <div class="section-header reveal">Security dashboards</div>
 
-  <!-- INVESTIGATION TOOL -->
-  <div class="detail-section reveal">
-    <div class="two-col">
-      <div>
-        <p class="two-col-label">The Investigation Tool</p>
-      </div>
-      <div>
-        <p class="detail-body-text">The investigation tool was one of the most powerful and impactful pieces of Security Center. It allowed admins and legal teams to run queries to investigate security incidents and compliance issues. The tool allowed for complex multi-condition queries and the ability to take action on results directly from the tool.</p>
-      </div>
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/SIT-actions-closeup.jpg" alt="Investigation tool actions" class="full-image">
-    </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/SIT-a11y-closeup.jpg" alt="Investigation tool accessibility" class="full-image">
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/relationship-audit-closeup.jpg" alt="Relationship audit" class="full-image">
-    </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/chart-specs.jpg" alt="Chart specifications" class="full-image">
-    </div>
-  </div>
-
-  <!-- OAUTH -->
-  <div class="detail-section dark reveal">
-    <div class="two-col">
-      <div>
-        <p class="two-col-label">OAuth &amp; Data Security</p>
-      </div>
-      <div>
-        <p class="detail-body-text">We also designed experiences around OAuth grant management, allowing admins to see which third-party apps had access to their organization's data and revoke access when needed. This was a critical piece of the security posture for enterprise customers.</p>
-      </div>
-    </div>
-  </div>
-
-  <div style="background: var(--dark); padding: 0 40px 60px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/oauth-grants-chrome-2.jpg" alt="OAuth grants" class="full-image">
-    </div>
+  <div style="background:#000;padding:0 40px 40px;display:grid;grid-template-columns:1fr 1fr;gap:20px;">
     <div class="rounded-image reveal">
       <img src="../../media/drive-sharing-widget-2.jpg" alt="Drive sharing widget" class="full-image">
     </div>
+    <div class="rounded-image reveal">
+      <img src="../../media/oauth-grant-widget2.jpg" alt="OAuth grant widget" class="full-image">
+    </div>
   </div>
 
-  <!-- NEXT -->
-  <a href="../ux-methods-ai/" class="next-project">
-    <div>
-      <p class="next-label">Next project</p>
-      <p class="next-title">UX Methods + AI</p>
+  <!-- CHARTS + DRILLDOWN TABLES -->
+  <div class="detail-section reveal">
+    <div class="two-col" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <h3 class="detail-h3">Charts + drilldown tables</h3>
+        <p class="detail-body-text" style="padding-right:0;">I learned more about data visualization working on this project than ever before. It started with visualizing some canned queries as an MVP and grew into a flexible dashboard framework where the dashboard could be customized based on the queries most important to each user.</p>
+        <br>
+        <p class="detail-body-text" style="padding-right:0;">The dashboard consisted of a main page housing chart widgets. From each widget you could click into a details page to analyze the data further using a set of filters. On the detail pages you can click on a point in time to filter by date — this refreshes the corresponding table showing individual line items filtered by whatever fields are available.</p>
+        <br>
+      </div>
+      <div>
+        <div class="rounded-image">
+          <img src="../../media/oauth-grants-chrome-2.jpg" alt="OAuth grants dashboard" class="full-image">
+        </div>
+      </div>
     </div>
-    <span class="next-arrow">→</span>
-  </a>
+  </div>
+
+  <!-- CHARTS INSIGHT PAIR -->
+  <div class="detail-section light-bg reveal">
+    <div class="insight-card-pair">
+      <div class="insight-card">
+        <div class="insight-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        </div>
+        <p class="insight-card-label">Research Insight</p>
+        <p class="insight-card-body">Many users needed help understanding what their data was telling them.</p>
+      </div>
+      <div class="insight-connector" aria-hidden="true">
+        <div class="connector-track">
+          <div class="connector-fill"></div>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+        </div>
+        <p class="insight-card-label">Design Approach</p>
+        <p class="insight-card-body">Labeled each chart widget with natural language questions that each featured query was designed to answer. Added a help tip to every dashboard widget with a detailed explanation of how to better understand the data in the chart. Used line graphs to show changes over time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPECS, GUIDELINES, EDGE CASES -->
+  <div class="detail-section dark reveal">
+    <div class="two-col" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <div class="rounded-image">
+          <img src="../../media/edge-cases.jpg" alt="Edge cases specs" class="full-image">
+        </div>
+      </div>
+      <div>
+        <h3 class="detail-h3">Specs, Guidelines, and Edge Cases</h3>
+        <p class="detail-body-text" style="padding-right:0;">In order to move quickly we referenced what data visualization guidance was available internally and filled in the gaps on our own. We needed to think through things like shape and color to differentiate data attributes in charts.</p>
+        <br>
+        <p class="detail-body-text" style="padding-right:0;">We also had to consider cases where there was no data available during a certain period of time vs. when the data was available but the value was zero.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#000;padding:40px;">
+    <div class="rounded-image reveal">
+      <img src="../../media/chart-specs.jpg" alt="Chart specs" class="full-image">
+    </div>
+  </div>
+
+  <!-- SECURITY SETTINGS HEALTH — SECTION HEADER -->
+  <div class="section-header reveal">Security Settings Health</div>
+
+  <div style="background:#000;padding:0 40px 40px;">
+    <div class="rounded-image reveal">
+      <img src="../../media/security-health-hero.jpg" alt="Security health hero" class="full-image">
+    </div>
+  </div>
+
+  <!-- SECURE SETTINGS CONFIGURATIONS — light section with insight-pair -->
+  <div class="detail-section light-bg reveal">
+    <h2 class="detail-section-heading">Secure settings configurations</h2>
+    <p class="detail-body-text" style="color:var(--black);padding-right:0;margin-bottom:20px;">One major way that organizations can keep their users and data more safe is to have the right mix of settings. The right mix is important so that you're allowing your organization to function as it needs to without risking security breaches and policy violations. In some cases the repercussions of security incidents can bankrupt a company, so getting this right is important.</p>
+    <p class="detail-body-text" style="color:var(--black);padding-right:0;">Before Security Health was launched, admins had to navigate to the multitude of different settings pages buried throughout the Admin Console. After it was launched, admins could see all security-related settings in one place, see how they were configured, and get recommendations on how to make their settings more secure.</p>
+    <div class="insight-card-pair inlined">
+      <div class="insight-card">
+        <div class="insight-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        </div>
+        <p class="insight-card-label">Research Insight</p>
+        <p class="insight-card-body">We hypothesized that admins would appreciate a gamified experience where we gave them a security score with a to-do list of improvements. We found this was seen as pejorative — users preferred a transparent view of their settings with light recommendations. Every organization has a different risk tolerance and different data policies.</p>
+      </div>
+      <div class="insight-connector" aria-hidden="true">
+        <div class="connector-track">
+          <div class="connector-fill"></div>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+        </div>
+        <p class="insight-card-label">Design Approach</p>
+        <p class="insight-card-body">Brought all security settings into a single list with their status and Google best-practice recommendations. We optimized for helping admins quickly see how their domain was configured. Our recommendations were secondary and neutral — no security scores, no red warnings, just transparent suggestions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INVESTIGATION TOOL — SECTION HEADER -->
+  <div class="section-header reveal">Security Investigation Tool</div>
+
+  <!-- INVESTIGATION TOOL HERO IMAGE immediately below header -->
+  <div style="background:#000;padding:0 40px 40px;">
+    <div class="rounded-image reveal">
+      <img src="../../media/SIT-hero.jpg" alt="Security investigation tool hero" class="full-image">
+    </div>
+  </div>
+
+  <!-- SEARCH & TAKE ACTIONS — paired with relationship-audit-closeup.jpg -->
+  <div class="detail-section reveal">
+    <div class="two-col" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <h3 class="detail-subsection-heading">Search &amp; take actions</h3>
+        <p class="detail-body-text" style="padding-right:0;">The foundational idea of the investigation tool was largely conceived by a fellow UXer on the project, but it was my responsibility to execute on finalizing the design to get the MVP launched.</p>
+        <br>
+        <p class="detail-body-text" style="padding-right:0;">I was personally responsible for designing the final UI for the investigation tool including the query builder and the experience for saving investigation objects and making them shareable. I also designed the Drive permissions experience where users could see what files in their organization might be shared too broadly. This design pattern was quite tricky because we had to show many-to-many relationships in the data using a junction table. Once the user found a violation we allowed users to take actions like editing permissions.</p>
+      </div>
+      <div>
+        <div class="rounded-image">
+          <img src="../../media/relationship-audit-closeup.jpg" alt="Relationship audit" class="full-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH & TAKE ACTIONS INSIGHT PAIR -->
+  <div class="detail-section light-bg reveal">
+    <div class="insight-card-pair">
+      <div class="insight-card">
+        <div class="insight-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        </div>
+        <p class="insight-card-label">Research Insight</p>
+        <p class="insight-card-body">Security teams, especially at larger companies, work in teams. There's a separation of duties in order to ensure that not too many people have the ability to wipe out your entire organization's data with a single action.</p>
+      </div>
+      <div class="insight-connector" aria-hidden="true">
+        <div class="connector-track">
+          <div class="connector-fill"></div>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+        </div>
+        <p class="insight-card-label">Design Approach</p>
+        <p class="insight-card-body">Create a shareable security investigation object where certain people can run searches to answer specific questions, then others can take over the investigation to take action on what's been found. Permissions were critical — we created the ability for individuals or groups to have read or write data access to particular data types and particular tools.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACTIONS AND PIVOTING — paired with SIT-actions-closeup.jpg -->
+  <div class="detail-section dark reveal">
+    <div class="two-col" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <p class="two-col-label" style="margin-bottom:20px;">Actions and pivoting</p>
+        <p class="detail-body-text" style="padding-right:0;">Many times admin investigations are quite organic. They get a prompt to answer one question and might come across an entire data set that's problematic. We created the ability to pivot organically from one set of query results to generate a completely new query — for example, pivoting from finding a phishing email to seeing all other emails from that same sender.</p>
+      </div>
+      <div>
+        <div class="rounded-image">
+          <img src="../../media/SIT-actions-closeup.jpg" alt="Investigation actions" class="full-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCESSIBILITY — paired with SIT-a11y-closeup.jpg -->
+  <div class="detail-section reveal">
+    <div class="two-col" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <p class="two-col-label" style="margin-bottom:20px;">Accessibility design</p>
+        <p class="detail-body-text" style="padding-right:0;">I initiated a big accessibility push on our team where historically the UX team did not have a focus on it. We created a singular process that worked well for us and then used that process to create detailed accessibility specs for the suite.</p>
+        <br>
+        <p class="detail-body-text" style="padding-right:0;">The accessibility design on this project was especially difficult because of the complex componentry involved — charting widgets, data tables with complex interactions, and high-data density. We also created a taxonomy for VE log names that we delivered to engineering since Security Center was highly instrumented.</p>
+      </div>
+      <div>
+        <div class="rounded-image">
+          <img src="../../media/SIT-a11y-closeup.jpg" alt="Accessibility specs" class="full-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPLORE MORE WORK -->
+  <section class="explore-more">
+    <h2 class="explore-more-label">Explore more work</h2>
+    <div class="explore-more-grid">
+
+      <a href="../oasis/" class="portfolio-card reveal">
+        <img src="../../media/garden-entrance2.jpg" alt="Oasis" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Identity</span></div>
+            <span class="portfolio-card-date">2024</span>
+          </div>
+          <h2 class="portfolio-card-title">Oasis</h2>
+        </div>
+      </a>
+
+      <a href="../google-checkout/" class="portfolio-card reveal">
+        <img src="../../media/shopping-scaled.jpg" alt="Google Checkout" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Systems Design</span><span class="cat-tag">UX/UI</span></div>
+            <span class="portfolio-card-date">2023</span>
+          </div>
+          <h2 class="portfolio-card-title">Google Checkout</h2>
+        </div>
+      </a>
+
+      <a href="../ux-methods-ai/" class="portfolio-card reveal">
+        <img src="../../media/aiux-methods.png" alt="UX Methods + AI" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">AI</span><span class="cat-tag">Process</span></div>
+            <span class="portfolio-card-date">2024 – 2025</span>
+          </div>
+          <h2 class="portfolio-card-title">UX Methods + AI</h2>
+        </div>
+      </a>
+
+    </div>
+  </section>
 
 </main>
 
 <footer>
-  <span class="footer-name">Zach Mesa © 2025</span>
-  <div class="footer-links">
-    <a href="https://www.linkedin.com/in/zachmesa/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="mailto:zandcmesa@gmail.com">Email</a>
+  <div class="footer-inner">
+    <div class="footer-copyright">© — 2026</div>
   </div>
 </footer>
 
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 <script src="../../js/main.js"></script>
 </body>
 </html>

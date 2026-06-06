@@ -6,11 +6,14 @@
   <title>Google Checkout — Zach Mesa</title>
   <link rel="icon" type="image/png" href="../../media/cropped-Artboard-2.png">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav class="detail-nav" id="main-nav">
-  <a href="../../" class="back-link">← Zach Mesa</a>
+  <a href="../../" class="back-link">Zach Mesa</a>
   <ul class="nav-links">
     <li><a href="../../#work">Work</a></li>
     <li><a href="../../#experience">Experience</a></li>
@@ -81,7 +84,7 @@
   </div>
 
   <!-- NAVIGATION MODEL -->
-  <div class="detail-section reveal">
+  <div class="detail-section light-bg reveal">
     <div class="two-col">
       <div>
         <p class="two-col-label">The Navigation Model</p>
@@ -108,7 +111,7 @@
   <!-- PRINCIPLED APPROACH -->
   <div class="two-col-even reveal" style="background: var(--black);">
     <div class="detail-body-col" style="background: #000;">
-      <h3 class="detail-h3">I helped the team take a principled approach for things like selection and visual design</h3>
+      <h3 class="detail-h3">I helped the team take a <mark class="word-marker">principled</mark> approach for things like selection and visual design</h3>
       <p style="line-height:1.7; opacity:0.8;">I anchored the team on the principle of "Don't make me think" based on the research we had conducted. Using this principle, the team used more intuitive and familiar interaction and visual conventions in multiple categories like color (using primary blue to communicate interactivity), shape (aligning to Material standards), and navigation affordances like auto-advance.</p>
       <br>
       <p style="line-height:1.7; opacity:0.8;">It was important to normalize a pattern and pressure test it across all of the data objects with their unique constraints to make sure it would work. There was a lot to weigh here especially across clients and also aligning our vision with Material Design standards, so we had to test various patterns and the design evolved with Material Design conventions.</p>
@@ -123,7 +126,7 @@
       <img src="../../media/item-design.png" alt="Item design system" style="max-width:100%;">
     </div>
     <div class="detail-body-col" style="background: #000;">
-      <h3 class="detail-h3">I focused the team on identifying and solving for inconsistencies in the system</h3>
+      <h3 class="detail-h3">I focused the team on identifying and solving for <mark class="word-marker">inconsistencies</mark> in the system</h3>
       <p style="line-height:1.7; opacity:0.8;">Each data object is connected to a unique UI component. Unfortunately, each component was built in somewhat of a silo for the purposes of a specific launch. I focused my team on paying off as much of this UX/tech debt as possible.</p>
       <br>
       <p style="line-height:1.7; opacity:0.8;">My team thought deeply about how we could normalize the UI across all of these objects — accounting for a summary state, an edit state, and an entry state for each one. Several teams ended up adopting the designs that came out of this normalization exercise.</p>
@@ -176,25 +179,59 @@
     </div>
   </div>
 
-  <!-- NEXT PROJECT -->
-  <a href="../security-center/" class="next-project">
-    <div>
-      <p class="next-label">Next project</p>
-      <p class="next-title">Security Center</p>
+  <!-- EXPLORE MORE WORK -->
+  <section class="explore-more">
+    <h2 class="explore-more-label">Explore more work</h2>
+    <div class="explore-more-grid">
+
+      <a href="../pixel-setup/" class="portfolio-card reveal">
+        <img src="../../media/pixel-9-pro.png" alt="Pixel Setup" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Payments</span><span class="cat-tag">UX/UI</span></div>
+            <span class="portfolio-card-date">2024</span>
+          </div>
+          <h2 class="portfolio-card-title">Pixel Setup</h2>
+        </div>
+      </a>
+
+      <a href="../ux-leadership/" class="portfolio-card reveal">
+        <img src="../../media/leadership.jpg" alt="UX Leadership" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Leadership</span></div>
+            <span class="portfolio-card-date">2019 – 2024</span>
+          </div>
+          <h2 class="portfolio-card-title">UX Leadership</h2>
+        </div>
+      </a>
+
+      <a href="../security-center/" class="portfolio-card reveal">
+        <img src="../../media/security-center-desktop-mockup-darker.jpg" alt="Security Center" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Analytics</span><span class="cat-tag">Security</span><span class="cat-tag">UX/UI</span></div>
+            <span class="portfolio-card-date">2016 – 2020</span>
+          </div>
+          <h2 class="portfolio-card-title">Security Center</h2>
+        </div>
+      </a>
+
     </div>
-    <span class="next-arrow">→</span>
-  </a>
+  </section>
 
 </main>
 
 <footer>
-  <span class="footer-name">Zach Mesa © 2025</span>
-  <div class="footer-links">
-    <a href="https://www.linkedin.com/in/zachmesa/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="mailto:zandcmesa@gmail.com">Email</a>
+  <div class="footer-inner">
+    <div class="footer-copyright">© — 2026</div>
   </div>
 </footer>
 
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 <script src="../../js/main.js"></script>
 </body>
 </html>
