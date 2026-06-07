@@ -46,7 +46,7 @@
   </div>
 
   <!-- THE CHALLENGE -->
-  <div class="detail-section reveal">
+  <div class="detail-section challenge reveal">
     <div class="two-col">
       <div>
         <p class="two-col-label">The Challenge</p>
@@ -93,7 +93,7 @@
   <!-- SECURITY DASHBOARDS — SECTION HEADER -->
   <div class="section-header reveal">Security dashboards</div>
 
-  <div style="background:#000;padding:0 40px 40px;display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+  <div style="background:#000;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:16px;">
     <div class="rounded-image reveal">
       <img src="../../media/drive-sharing-widget-2.jpg" alt="Drive sharing widget" class="full-image">
     </div>
@@ -104,43 +104,37 @@
 
   <!-- CHARTS + DRILLDOWN TABLES -->
   <div class="detail-section reveal">
-    <div class="two-col" style="grid-template-columns:1fr 1fr;">
-      <div>
+    <div class="two-col-adaptive">
+      <div class="two-col-adaptive-heading">
         <h3 class="detail-h3">Charts + drilldown tables</h3>
-        <p class="detail-body-text" style="padding-right:0;">I learned more about data visualization working on this project than ever before. It started with visualizing some canned queries as an MVP and grew into a flexible dashboard framework where the dashboard could be customized based on the queries most important to each user.</p>
-        <br>
-        <p class="detail-body-text" style="padding-right:0;">The dashboard consisted of a main page housing chart widgets. From each widget you could click into a details page to analyze the data further using a set of filters. On the detail pages you can click on a point in time to filter by date — this refreshes the corresponding table showing individual line items filtered by whatever fields are available.</p>
-        <br>
       </div>
-      <div>
+      <div class="two-col-adaptive-image">
         <div class="rounded-image">
           <img src="../../media/oauth-grants-chrome-2.jpg" alt="OAuth grants dashboard" class="full-image">
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- CHARTS INSIGHT PAIR -->
-  <div class="detail-section light-bg reveal">
-    <div class="insight-card-pair">
-      <div class="insight-card">
-        <div class="insight-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-        </div>
-        <p class="insight-card-label">Research Insight</p>
-        <p class="insight-card-body">Many users needed help understanding what their data was telling them.</p>
+      <div class="two-col-adaptive-body">
+        <p class="detail-body-text" style="padding-right:0;">I learned more about data visualization working on this project than ever before. It started with visualizing some canned queries as an MVP and grew into a flexible dashboard framework where the dashboard could be customized based on the queries most important to each user.</p>
+        <br>
+        <p class="detail-body-text" style="padding-right:0;">The dashboard consisted of a main page housing chart widgets. From each widget you could click into a details page to analyze the data further using a set of filters. On the detail pages you can click on a point in time to filter by date — this refreshes the corresponding table showing individual line items filtered by whatever fields are available.</p>
       </div>
-      <div class="insight-connector" aria-hidden="true">
-        <div class="connector-track">
-          <div class="connector-fill"></div>
+      <div class="two-col-adaptive-insight">
+        <div class="insight-pair col">
+          <div class="insight-block">
+            <p class="insight-label">
+              <span class="insight-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+              Research Insight
+            </p>
+            <p class="insight-body">Many users needed help understanding what their data was telling them.</p>
+          </div>
+          <div class="insight-block">
+            <p class="insight-label">
+              <span class="insight-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg></span>
+              Design Approach
+            </p>
+            <p class="insight-body">Labeled each chart widget with natural language questions that each featured query was designed to answer. Added a help tip to every dashboard widget with a detailed explanation of how to better understand the data in the chart. Used line graphs to show changes over time.</p>
+          </div>
         </div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
-        </div>
-        <p class="insight-card-label">Design Approach</p>
-        <p class="insight-card-body">Labeled each chart widget with natural language questions that each featured query was designed to answer. Added a help tip to every dashboard widget with a detailed explanation of how to better understand the data in the chart. Used line graphs to show changes over time.</p>
       </div>
     </div>
   </div>
@@ -171,7 +165,7 @@
   <!-- SECURITY SETTINGS HEALTH — SECTION HEADER -->
   <div class="section-header reveal">Security Settings Health</div>
 
-  <div style="background:#000;padding:0 40px 40px;">
+  <div style="background:#000;padding:40px;">
     <div class="rounded-image reveal">
       <img src="../../media/security-health-hero.jpg" alt="Security health hero" class="full-image">
     </div>
@@ -182,25 +176,20 @@
     <h2 class="detail-section-heading">Secure settings configurations</h2>
     <p class="detail-body-text" style="color:var(--black);padding-right:0;margin-bottom:20px;">One major way that organizations can keep their users and data more safe is to have the right mix of settings. The right mix is important so that you're allowing your organization to function as it needs to without risking security breaches and policy violations. In some cases the repercussions of security incidents can bankrupt a company, so getting this right is important.</p>
     <p class="detail-body-text" style="color:var(--black);padding-right:0;">Before Security Health was launched, admins had to navigate to the multitude of different settings pages buried throughout the Admin Console. After it was launched, admins could see all security-related settings in one place, see how they were configured, and get recommendations on how to make their settings more secure.</p>
-    <div class="insight-card-pair inlined">
-      <div class="insight-card">
-        <div class="insight-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-        </div>
-        <p class="insight-card-label">Research Insight</p>
-        <p class="insight-card-body">We hypothesized that admins would appreciate a gamified experience where we gave them a security score with a to-do list of improvements. We found this was seen as pejorative — users preferred a transparent view of their settings with light recommendations. Every organization has a different risk tolerance and different data policies.</p>
+    <div class="insight-pair inlined">
+      <div class="insight-block">
+        <p class="insight-label">
+          <span class="insight-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+          Research Insight
+        </p>
+        <p class="insight-body">We hypothesized that admins would appreciate a gamified experience where we gave them a security score with a to-do list of improvements. We found this was seen as pejorative — users preferred a transparent view of their settings with light recommendations. Every organization has a different risk tolerance and different data policies.</p>
       </div>
-      <div class="insight-connector" aria-hidden="true">
-        <div class="connector-track">
-          <div class="connector-fill"></div>
-        </div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
-        </div>
-        <p class="insight-card-label">Design Approach</p>
-        <p class="insight-card-body">Brought all security settings into a single list with their status and Google best-practice recommendations. We optimized for helping admins quickly see how their domain was configured. Our recommendations were secondary and neutral — no security scores, no red warnings, just transparent suggestions.</p>
+      <div class="insight-block">
+        <p class="insight-label">
+          <span class="insight-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg></span>
+          Design Approach
+        </p>
+        <p class="insight-body">Brought all security settings into a single list with their status and Google best-practice recommendations. We optimized for helping admins quickly see how their domain was configured. Our recommendations were secondary and neutral — no security scores, no red warnings, just transparent suggestions.</p>
       </div>
     </div>
   </div>
@@ -209,7 +198,7 @@
   <div class="section-header reveal">Security Investigation Tool</div>
 
   <!-- INVESTIGATION TOOL HERO IMAGE immediately below header -->
-  <div style="background:#000;padding:0 40px 40px;">
+  <div style="background:#000;padding:40px;">
     <div class="rounded-image reveal">
       <img src="../../media/SIT-hero.jpg" alt="Security investigation tool hero" class="full-image">
     </div>
@@ -217,42 +206,37 @@
 
   <!-- SEARCH & TAKE ACTIONS — paired with relationship-audit-closeup.jpg -->
   <div class="detail-section reveal">
-    <div class="two-col" style="grid-template-columns:1fr 1fr;">
-      <div>
+    <div class="two-col-adaptive">
+      <div class="two-col-adaptive-heading">
         <h3 class="detail-subsection-heading">Search &amp; take actions</h3>
-        <p class="detail-body-text" style="padding-right:0;">The foundational idea of the investigation tool was largely conceived by a fellow UXer on the project, but it was my responsibility to execute on finalizing the design to get the MVP launched.</p>
-        <br>
-        <p class="detail-body-text" style="padding-right:0;">I was personally responsible for designing the final UI for the investigation tool including the query builder and the experience for saving investigation objects and making them shareable. I also designed the Drive permissions experience where users could see what files in their organization might be shared too broadly. This design pattern was quite tricky because we had to show many-to-many relationships in the data using a junction table. Once the user found a violation we allowed users to take actions like editing permissions.</p>
       </div>
-      <div>
+      <div class="two-col-adaptive-image">
         <div class="rounded-image">
           <img src="../../media/relationship-audit-closeup.jpg" alt="Relationship audit" class="full-image">
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- SEARCH & TAKE ACTIONS INSIGHT PAIR -->
-  <div class="detail-section light-bg reveal">
-    <div class="insight-card-pair">
-      <div class="insight-card">
-        <div class="insight-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-        </div>
-        <p class="insight-card-label">Research Insight</p>
-        <p class="insight-card-body">Security teams, especially at larger companies, work in teams. There's a separation of duties in order to ensure that not too many people have the ability to wipe out your entire organization's data with a single action.</p>
+      <div class="two-col-adaptive-body">
+        <p class="detail-body-text" style="padding-right:0;">The foundational idea of the investigation tool was largely conceived by a fellow UXer on the project, but it was my responsibility to execute on finalizing the design to get the MVP launched.</p>
+        <br>
+        <p class="detail-body-text" style="padding-right:0;">I was personally responsible for designing the final UI for the investigation tool including the query builder and the experience for saving investigation objects and making them shareable. I also designed the Drive permissions experience where users could see what files in their organization might be shared too broadly. This design pattern was quite tricky because we had to show many-to-many relationships in the data using a junction table. Once the user found a violation we allowed users to take actions like editing permissions.</p>
       </div>
-      <div class="insight-connector" aria-hidden="true">
-        <div class="connector-track">
-          <div class="connector-fill"></div>
+      <div class="two-col-adaptive-insight">
+        <div class="insight-pair col">
+          <div class="insight-block">
+            <p class="insight-label">
+              <span class="insight-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+              Research Insight
+            </p>
+            <p class="insight-body">Security teams, especially at larger companies, work in teams. There's a separation of duties in order to ensure that not too many people have the ability to wipe out your entire organization's data with a single action.</p>
+          </div>
+          <div class="insight-block">
+            <p class="insight-label">
+              <span class="insight-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg></span>
+              Design Approach
+            </p>
+            <p class="insight-body">Create a shareable security investigation object where certain people can run searches to answer specific questions, then others can take over the investigation to take action on what's been found. Permissions were critical — we created the ability for individuals or groups to have read or write data access to particular data types and particular tools.</p>
+          </div>
         </div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
-        </div>
-        <p class="insight-card-label">Design Approach</p>
-        <p class="insight-card-body">Create a shareable security investigation object where certain people can run searches to answer specific questions, then others can take over the investigation to take action on what's been found. Permissions were critical — we created the ability for individuals or groups to have read or write data access to particular data types and particular tools.</p>
       </div>
     </div>
   </div>
@@ -291,7 +275,17 @@
 
   <!-- EXPLORE MORE WORK -->
   <section class="explore-more">
-    <h2 class="explore-more-label">Explore more work</h2>
+    <div class="explore-more-header">
+      <h2 class="explore-more-label">Explore more work</h2>
+      <div class="explore-more-nav">
+        <button class="explore-nav-btn prev" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="explore-nav-btn next" aria-label="Next project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
     <div class="explore-more-grid">
 
       <a href="../oasis/" class="portfolio-card reveal">

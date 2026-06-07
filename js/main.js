@@ -50,6 +50,14 @@ if (scrollBtn) {
   scrollBtn.addEventListener('click', () => lenis.scrollTo('#work'));
 }
 
+// Smooth nav anchor scrolling via Lenis
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    lenis.scrollTo(link.getAttribute('href'));
+  });
+});
+
 // Reveal on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -80,7 +88,9 @@ function fitFooterText() {
   document.body.removeChild(test);
 
   if (!widthAt100) return;
-  const targetSize = Math.floor((inner.clientWidth / widthAt100) * 100);
+  const style = getComputedStyle(inner);
+  const availableWidth = inner.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+  const targetSize = Math.floor((availableWidth / widthAt100) * 100);
   copyright.style.fontSize = targetSize + 'px';
 }
 
@@ -109,17 +119,6 @@ if (footerCopyright) {
 
 fitFooterText(); // immediate call — corrected again when fonts resolve
 
-// Liquid fill animation for insight card pairs
-document.querySelectorAll('.insight-card-pair').forEach(pair => {
-  const obs = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      setTimeout(() => pair.classList.add('liquid-animate'), 300);
-      obs.disconnect();
-    }
-  }, { threshold: 0.5 });
-  obs.observe(pair);
-});
-
 // Word marker highlight animation
 document.querySelectorAll('mark.word-marker').forEach(mark => {
   new IntersectionObserver((entries) => {
@@ -131,17 +130,107 @@ document.querySelectorAll('mark.word-marker').forEach(mark => {
   }, { threshold: 0.8 }).observe(mark);
 });
 
+// Explore more — mobile carousel
+(function () {
+  const grid = document.querySelector('.explore-more-grid');
+  const prevBtn = document.querySelector('.explore-nav-btn.prev');
+  const nextBtn = document.querySelector('.explore-nav-btn.next');
+  if (!grid || !prevBtn || !nextBtn) return;
+
+  const cards = grid.querySelectorAll('.portfolio-card');
+
+  function currentIndex() {
+    return Math.round(grid.scrollLeft / grid.offsetWidth);
+  }
+
+  prevBtn.addEventListener('click', () => {
+    const idx = (currentIndex() - 1 + cards.length) % cards.length;
+    grid.scrollTo({ left: idx * grid.offsetWidth, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const idx = (currentIndex() + 1) % cards.length;
+    grid.scrollTo({ left: idx * grid.offsetWidth, behavior: 'smooth' });
+  });
+})();
+
 // "View" cursor chip on portfolio cards
 const chip = document.createElement('div');
 chip.className = 'cursor-chip';
 chip.textContent = 'View';
 document.body.appendChild(chip);
 
+let mouseX = 0, mouseY = 0;
+let chipX = 0, chipY = 0;
+let chipRaf = null;
+const CHIP_OFFSET_X = 18;
+const CHIP_OFFSET_Y = 18;
+
+function animateChip() {
+  chipX += (mouseX + CHIP_OFFSET_X - chipX) * 0.18;
+  chipY += (mouseY + CHIP_OFFSET_Y - chipY) * 0.18;
+  chip.style.left = chipX + 'px';
+  chip.style.top = chipY + 'px';
+  chipRaf = requestAnimationFrame(animateChip);
+}
+
 document.querySelectorAll('.portfolio-card').forEach(card => {
-  card.addEventListener('mouseenter', () => chip.classList.add('visible'));
-  card.addEventListener('mouseleave', () => chip.classList.remove('visible'));
-  card.addEventListener('mousemove', e => {
-    chip.style.left = e.clientX + 'px';
-    chip.style.top = e.clientY + 'px';
+  card.addEventListener('mouseenter', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    chipX = mouseX + CHIP_OFFSET_X;
+    chipY = mouseY + CHIP_OFFSET_Y;
+    chip.style.left = chipX + 'px';
+    chip.style.top = chipY + 'px';
+    chip.classList.add('visible');
+    if (!chipRaf) chipRaf = requestAnimationFrame(animateChip);
   });
+  card.addEventListener('mouseleave', () => {
+    chip.classList.remove('visible');
+    cancelAnimationFrame(chipRaf);
+    chipRaf = null;
+  });
+  card.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+});
+
+// Impact stat — count up + slide in on scroll
+document.querySelectorAll('.impact-stat-number').forEach(el => {
+  const target = parseInt(el.dataset.target, 10);
+  let started = false;
+  new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        el.classList.add('counting');
+        const duration = 1400;
+        let startTime = null;
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const progress = Math.min((timestamp - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(eased * target) + '%';
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+    });
+  }, { threshold: 0.3 }).observe(el);
+});
+
+// Video player — click to play/pause
+document.querySelectorAll('.video-player').forEach(player => {
+  const video = player.querySelector('video');
+  player.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      player.classList.add('playing');
+    } else {
+      video.pause();
+      player.classList.remove('playing');
+    }
+  });
+  video.addEventListener('ended', () => player.classList.remove('playing'));
 });

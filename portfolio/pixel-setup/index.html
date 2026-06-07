@@ -45,7 +45,7 @@
   </div>
 
   <!-- CHALLENGE -->
-  <div class="detail-section light-bg reveal">
+  <div class="detail-section light-bg challenge reveal">
     <div class="two-col">
       <div>
         <p class="two-col-label">The Challenge</p>
@@ -59,12 +59,17 @@
   </div>
 
   <!-- HERO IMAGES -->
-  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/pixel-onboarding.png" alt="Pixel onboarding" class="full-image">
+  <div style="background:#000; padding:40px;">
+    <div class="rounded-image reveal" style="margin-bottom:16px;">
+      <img src="../../media/pixel-2-landscape.png" alt="Pixel landscape" class="full-image">
     </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/pixel-teal.png" alt="Pixel teal" class="full-image">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="rounded-image reveal">
+        <img src="../../media/pixel-onboarding.png" alt="Pixel setup" class="full-image">
+      </div>
+      <div class="rounded-image reveal">
+        <img src="../../media/dynamic-color-tokens.png" alt="Dynamic color tokens" class="full-image">
+      </div>
     </div>
   </div>
 
@@ -92,33 +97,33 @@
   </div>
 
   <!-- DESIGN DETAILS -->
-  <div style="background: #000; padding: 40px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/pixel-2-landscape.png" alt="Pixel landscape view" class="full-image">
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/dynamic-color-tokens.png" alt="Dynamic color tokens" class="full-image">
-    </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/greenlines.png" alt="Greenlines accessibility specs" class="full-image">
-    </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/orientations.png" alt="All orientations" class="full-image">
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px;">
-    <div class="rounded-image reveal">
+  <div style="background:#000; padding:40px;">
+    <div class="rounded-image reveal" style="margin-bottom:16px;">
       <img src="../../media/pixel-closeup.png" alt="Pixel close-up" class="full-image">
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="rounded-image reveal">
+        <img src="../../media/greenlines.png" alt="Greenlines accessibility specs" class="full-image">
+      </div>
+      <div class="rounded-image reveal">
+        <img src="../../media/orientations.png" alt="All orientations" class="full-image">
+      </div>
     </div>
   </div>
 
   <!-- EXPLORE MORE WORK -->
   <section class="explore-more">
-    <h2 class="explore-more-label">Explore more work</h2>
+    <div class="explore-more-header">
+      <h2 class="explore-more-label">Explore more work</h2>
+      <div class="explore-more-nav">
+        <button class="explore-nav-btn prev" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="explore-nav-btn next" aria-label="Next project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
     <div class="explore-more-grid">
 
       <a href="../workshop-sessions/" class="portfolio-card reveal">

@@ -42,17 +42,19 @@
         </div>
       </div>
     </div>
-    <img src="../../media/shopping-scaled.jpg" alt="Google Checkout hero" class="detail-hero-image">
+    <img src="../../media/google-checkout-hero.png" alt="Google Checkout hero" class="detail-hero-image" style="object-fit:contain; background:#0a0a0a;">
   </div>
 
   <!-- THE CHALLENGE -->
-  <div class="detail-section">
+  <div class="detail-section challenge">
     <div class="two-col reveal">
       <div>
         <p class="two-col-label">The Challenge</p>
       </div>
       <div>
-        <p class="detail-body-text">The team that I was hired to lead had started to launch a new checkout experience for Google. The team had started this product rollout with one of Google's businesses and needed to roll it out to all of Google. The challenge here was that the Platform checkout experience is embedded into various Google UIs in a myriad of ways, which makes for a myriad of challenges, especially navigation. Not only did the checkout have to be embedded in many different containers, but across all clients. The strategy needed work. So we took a step back and re-designed the checkout from the ground up. This was a serious exercise in systems design since we had to account for all of Google's various UI constraints across clients, our technical constraints for Platform, and balance all of that with our vision for the best checkout.</p>
+        <p class="detail-body-text">Google's checkout experience was embedded across dozens of products and clients — each with its own UI constraints and engineering infrastructure. The existing approach wouldn't scale to all of Google. But a full platform reset meant breaking how teams had built everything.</p>
+        <br>
+        <p class="detail-body-text">The harder challenge wasn't the design work. It was building the case for that reset at Google's scale: getting stakeholders with competing priorities to believe the investment was worth the disruption. The political and organizational lift required as much effort as the product itself. We made the case, got the buy-in, and rebuilt the checkout from the ground up.</p>
       </div>
     </div>
   </div>
@@ -79,32 +81,27 @@
   <!-- IMAGE -->
   <div class="detail-section" style="padding: 40px;">
     <div class="rounded-image reveal">
-      <img src="../../media/checkout-workshop.jpg" alt="Checkout workshop" class="full-image">
+      <img src="../../media/google-store-browser.png" alt="Google Checkout browser mockup" class="full-image">
     </div>
   </div>
 
-  <!-- NAVIGATION MODEL -->
-  <div class="detail-section light-bg reveal">
-    <div class="two-col">
-      <div>
-        <p class="two-col-label">The Navigation Model</p>
-      </div>
-      <div>
-        <p class="detail-body-text">One of the biggest decisions the team had to make was which navigation model we would use. Industry research revealed that there were 3 main models to choose from (Multi-page, Accordion, and Single-page), but the engineering team didn't have the bandwidth to build them all.</p>
-        <br>
-        <p class="detail-body-text">I had the team pressure test the models within our known constraints and this unblocked the decision for what navigation model to use first. While the multi-page model was the most ubiquitous model in the industry, the Accordion model decreased our dependency on other Google 1P UIs — allowing us to do pretty much all of the required tasks inline without affecting the surrounding UI that we didn't control.</p>
-        <br>
-        <p class="detail-body-text">Before we had the chance to do our own research we referenced all of the great ecommerce checkout research that has been published by the Baymard Institute, but we also did several studies on our own to compare models across form factors and checkout scenarios.</p>
-      </div>
+  <!-- NAVIGATION MODEL + ACCORDION -->
+  <div class="two-col-even reveal" style="background: var(--black);">
+    <div class="detail-body-col" style="background: var(--white); color: var(--black);">
+      <p class="two-col-label" style="color: var(--black);">The Navigation Model</p>
+      <br>
+      <p class="detail-body-text" style="color: var(--black);">Industry research pointed to three main checkout navigation models — multi-page, accordion, and single-page — but engineering capacity meant we had to prioritize one.</p>
+      <br>
+      <p class="detail-body-text" style="color: var(--black);">I had the team pressure-test each model against our constraints. Multi-page was the most common in the industry, but the accordion stood out: it let us complete all required tasks inline, reducing our dependency on surrounding Google 1P UIs we didn't control.</p>
+      <br>
+      <p class="detail-body-text" style="color: var(--black);">We grounded the decision in Baymard Institute research and ran our own studies comparing models across form factors and checkout scenarios.</p>
     </div>
-  </div>
-
-  <!-- ACCORDION VIDEO -->
-  <div style="background: #000; padding: 0 40px 40px;">
-    <div class="rounded-image reveal">
-      <video autoplay muted loop playsinline style="width:100%; display:block;">
-        <source src="../../media/accordion.mp4" type="video/mp4">
-      </video>
+    <div style="background: #000; display:flex; align-items:center; justify-content:center; padding: 40px;">
+      <div class="rounded-image reveal" style="width:100%;">
+        <video autoplay muted loop playsinline style="width:100%; display:block;">
+          <source src="../../media/accordion.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 
@@ -137,7 +134,7 @@
   <div class="principles-section reveal">
     <div>
       <h3 class="principles-label">Principles</h3>
-      <p class="principles-label" style="font-size:1rem; font-weight:400; opacity:0.7; margin-top:20px; line-height:1.6;">We created dynamic product principles using the research we had done. We generated raw insights from the research, turned those into categorized postulates, identified patterns and distilled those into product principles.</p>
+      <p class="principles-label" style="font-family:var(--font-body); font-size:1rem; font-weight:400; opacity:0.7; margin-top:20px; line-height:1.6;">We created dynamic product principles using the research we had done. We generated raw insights from the research, turned those into categorized postulates, identified patterns and distilled those into product principles.</p>
     </div>
     <div class="principles-grid">
       <div>
@@ -163,25 +160,19 @@
     </div>
   </div>
 
-  <!-- ADDITIONAL IMAGES -->
-  <div style="background: #000; padding: 40px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/storyboard.png" alt="Storyboard" class="full-image">
-    </div>
-  </div>
-
-  <div style="background: #000; padding: 0 40px 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-    <div class="rounded-image reveal">
-      <img src="../../media/lit-review.png" alt="Literature review" class="full-image">
-    </div>
-    <div class="rounded-image reveal">
-      <img src="../../media/strategic-connection.png" alt="Strategic connection" class="full-image">
-    </div>
-  </div>
-
   <!-- EXPLORE MORE WORK -->
   <section class="explore-more">
-    <h2 class="explore-more-label">Explore more work</h2>
+    <div class="explore-more-header">
+      <h2 class="explore-more-label">Explore more work</h2>
+      <div class="explore-more-nav">
+        <button class="explore-nav-btn prev" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="explore-nav-btn next" aria-label="Next project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
     <div class="explore-more-grid">
 
       <a href="../pixel-setup/" class="portfolio-card reveal">
