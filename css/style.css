@@ -1373,7 +1373,7 @@ mark.word-marker.visible {
 @media (max-width: 690px) {
   .nav-links { display: none; }
 
-  .portfolio-card { height: 70vw; }
+  .portfolio-stack .portfolio-card { height: 85vh; }
 
   .section-heading { margin-bottom: 32px; }
 
