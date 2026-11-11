@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zach Mesa is not here</title>
+  <link rel="icon" type="image/png" href="/media/cropped-Artboard-2.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="not-found">
+    <p class="not-found-url">zachmesa.is/<span id="path">somewhere-else</span></p>
+    <h1>Nope. Not that.</h1>
+    <p>This page doesn't exist, or it moved. Here's what Zach Mesa <em>is</em>:</p>
+    <ul>
+      <li><a href="/thinking-with-ai/">thinking-with-ai</a></li>
+      <li><a href="/leading-teams/">leading-teams</a></li>
+      <li><a href="/showing-the-work/">showing-the-work</a></li>
+      <li><a href="/rebuilding-checkout/">rebuilding-checkout</a></li>
+      <li><a href="/securing-workspace/">securing-workspace</a></li>
+      <li><a href="/setting-up-pixel/">setting-up-pixel</a></li>
+      <li><a href="/hosting-crit/">hosting-crit</a></li>
+      <li><a href="/dreaming-up-oasis/">dreaming-up-oasis</a></li>
+    </ul>
+    <a href="/" class="text-link">Home <span aria-hidden="true">→</span></a>
+  </main>
+  <script>
+    var p = location.pathname.replace(/^\/+|\/+$/g, '');
+    if (p) document.getElementById('path').textContent = p;
+  </script>
+</body>
+</html>

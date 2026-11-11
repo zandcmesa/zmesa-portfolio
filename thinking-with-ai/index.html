@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zach Mesa is thinking with AI</title>
+  <meta name="description" content="How Zach Mesa uses Claude Code for strategy, problem definition and multi-session review, and how his design team learns AI together.">
+  <link rel="icon" type="image/png" href="../media/cropped-Artboard-2.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="detail-nav" id="main-nav">
+  <a href="../" class="back-link">Zach Mesa</a>
+  <ul class="nav-links">
+    <li><a href="../#now">Now</a></li>
+    <li><a href="../#work">Work</a></li>
+    <li><a href="../#experience">Experience</a></li>
+    <li><a href="../#about">About</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="detail-hero">
+    <div class="detail-header">
+      <h1 class="detail-title reveal">Most of my AI work happens before anything gets designed.</h1>
+      <div class="detail-meta-row reveal">
+        <div>
+          <p class="detail-meta-label">Years</p>
+          <p class="detail-meta-value">2024 – Now</p>
+        </div>
+        <div>
+          <p class="detail-meta-label">My Role</p>
+          <p class="detail-meta-value">Senior Design Manager</p>
+        </div>
+        <div class="detail-cats">
+          <span class="cat-tag">Strategy</span>
+          <span class="cat-tag">Research</span>
+          <span class="cat-tag">Team culture</span>
+        </div>
+      </div>
+    </div>
+    <img src="../media/aiux-methods.png" alt="" class="detail-hero-image">
+  </div>
+
+  <!-- INTRO -->
+  <div class="detail-section challenge reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">Where it started</p>
+      </div>
+      <div>
+        <p class="detail-body-text">A year ago I would have told you the big change was prototyping. I could build in an afternoon what used to take weeks, and I still do that. But the change that stuck was further upstream.</p>
+        <br>
+        <p class="detail-body-text">Now I use AI mostly to think. To write a vision, to define a problem with real data instead of hunches, and to check my own work before I ask anyone else to spend time on it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SETUP -->
+  <div class="detail-section light-bg reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">My setup</p>
+        <p class="side-note">For anyone who asks. People usually do.</p>
+      </div>
+      <div>
+        <dl class="spec-list">
+          <div><dt>Where</dt><dd>Claude Code in Ghostty, almost exclusively.</dd></div>
+          <div><dt>Model</dt><dd>Opus 5.5 on high effort. I'd rather wait a little for a better answer.</dd></div>
+          <div><dt>Context</dt><dd>A folder of context files on my machine covering my team, the org, and every project we have going. Every session can read it, and so can my agents.</dd></div>
+          <div><dt>Data</dt><dd>Amplitude for what people do in the product. Snowflake for the backend data. Glean for searching everything we've already written internally.</dd></div>
+          <div><dt>Meetings</dt><dd>Fellow and Wispr Flow take notes. The transcripts go back into the context, so decisions made in a meeting don't get lost.</dd></div>
+          <div><dt>Design</dt><dd>Figma MCP when I need Claude to see what's in a file.</dd></div>
+        </dl>
+        <p class="detail-body-text spec-footnote">If I had to pick one lesson: give Claude as much context as you can. Most of the bad output I've seen, mine included, was a context problem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- THREE SESSIONS -->
+  <div class="detail-section reveal">
+    <h2 class="detail-section-heading">Three sessions, then people.</h2>
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">How I check my work</p>
+      </div>
+      <div>
+        <p class="detail-body-text">I don't trust a first draft, whether a person or a model wrote it. So nothing I write with Claude goes straight to a meeting. It goes through at least three sessions, each one starting fresh.</p>
+      </div>
+    </div>
+
+    <ol class="session-steps">
+      <li>
+        <span class="session-num">Session 1</span>
+        <h3>Draft</h3>
+        <p>I point Claude at the context files, the research and the data, and we write the first version together. This is where the thinking happens, and also where most of the mistakes get made.</p>
+      </li>
+      <li>
+        <span class="session-num">Session 2</span>
+        <h3>Attack it</h3>
+        <p>New session, or just <code>/clear</code>. I ask it to analyze the strategy, validate every claim, look for errors and make the proposal stronger. It almost always finds a few things that were missed or just plain wrong.</p>
+      </li>
+      <li>
+        <span class="session-num">Session 3</span>
+        <h3>Tighten</h3>
+        <p>One more pass for brevity, tone and flow, and another round of validation. By the end of this one it's usually ready to share.</p>
+      </li>
+      <li class="session-humans">
+        <span class="session-num">Then</span>
+        <h3>People</h3>
+        <p>Real feedback from real humans, and I keep refining from there. AI gets me to a draft worth arguing about. People decide whether it's right.</p>
+      </li>
+    </ol>
+
+    <div class="callout-link">
+      <p>I can't publish the strategy work I do at HubSpot, so I ran the same process on a sample topic and kept the receipts, including everything session two caught.</p>
+      <a href="../showing-the-work/" class="text-link">See the sample strategy <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <!-- PROBLEM DEFINITION -->
+  <div class="detail-section dark reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">Problem definition</p>
+        <div class="tool-tags">
+          <span class="tool-tag">Amplitude</span>
+          <span class="tool-tag">Snowflake</span>
+          <span class="tool-tag">Glean</span>
+          <span class="tool-tag">Google Workspace MCP</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="detail-h3">A good problem statement changes more than a good prototype does. Most teams still spend the least time on it.</h3>
+        <p class="detail-body-text">Before, a solid problem definition meant weeks of chasing analysts and digging through old decks. Now I can pull behavioral data from Amplitude, backend numbers from Snowflake, past research and decisions through Glean, and strategy docs from Google Drive into the same session, and ask how they line up.</p>
+        <br>
+        <p class="detail-body-text">They often don't. A plan says users want one thing, and the usage data says they're doing something else. Finding that gap early is worth more to me than any prototype, because it changes what we build instead of how fast we build it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MORNING BRIEF -->
+  <div class="detail-section reveal">
+    <div class="two-col-even brief-layout">
+      <div class="brief-copy">
+        <p class="two-col-label">The morning brief</p>
+        <h3 class="detail-h3">I built a small team of agents that tells me what actually matters today.</h3>
+        <p class="detail-body-text">It runs every morning. The agents share the same context files I use, so they know what my team is working on and what's going on across the org. The brief splits things into what I need to get done today and what can wait until tomorrow.</p>
+        <br>
+        <p class="detail-body-text">There's a feedback step built in. If it ranked something wrong or missed something obvious, I say so, and that goes back into how it works, so it keeps getting better.</p>
+      </div>
+      <div class="brief-card" aria-label="Illustrative example of a morning brief">
+        <div class="brief-card-head">
+          <span>Morning brief</span>
+          <span>Tue 8:02 AM</span>
+        </div>
+        <p class="brief-group">Today</p>
+        <ul>
+          <li>Feedback on the onboarding principles draft. Review is Thursday and the team needs a day to react.</li>
+          <li>Two calibration notes are due before the manager sync.</li>
+          <li>The activation dashboard dipped Friday. Worth asking why before someone else does.</li>
+        </ul>
+        <p class="brief-group">Can wait until tomorrow</p>
+        <ul>
+          <li>Quarterly planning doc comments (no deadline yet)</li>
+          <li>Reply on the design system contribution thread</li>
+        </ul>
+        <p class="brief-feedback">Was this right? <span>👍</span> <span>👎</span> Tell me what I missed.</p>
+        <p class="brief-caption">Illustrative example. The real ones are about real work.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div class="detail-section light-bg reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">Learning out loud</p>
+      </div>
+      <div>
+        <h3 class="detail-h3">Nobody on my team is expected to figure this out alone, including me.</h3>
+        <p class="detail-body-text">We have a team Slack channel for sharing AI workflows. I post mine regularly, including the ones that didn't work, and I ask everyone else to do the same. When someone shares a trick that saves them an hour, the whole team gets that hour back.</p>
+        <br>
+        <p class="detail-body-text">The best thing to come out of it is a shared skill library. Skills are reusable instructions for Claude Code. Each one turns something one of us figured out into something the rest of us can run. I wrote the first few. Then designers on the team started contributing their own, which was the point.</p>
+
+        <ul class="skill-list">
+          <li>
+            <code>grill-me</code>
+            <p>My version of the "grill me" skill. It interrogates a plan until the weak spots show up.</p>
+          </li>
+          <li>
+            <code>product-principles</code>
+            <p>Turns research into insights, then postulates, then principles. It used to be a whole workshop.</p>
+          </li>
+          <li>
+            <code>product-quality-review</code>
+            <p>Helps people write Product Quality Review docs without starting from a blank page.</p>
+          </li>
+          <li class="skill-contributed">
+            <code>+ more from the team</code>
+            <p>A couple of designers have each added a skill of their own. I expect that list to grow faster than mine.</p>
+          </li>
+        </ul>
+
+        <p class="detail-body-text">Earlier on, I also ran a Claude Code onboarding program to get designers building with code and AI instead of designing around them, and set up GitHub Pages so anyone could share a working prototype without waiting on engineering.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESIGNING FOR AGENTS -->
+  <div class="detail-section dark reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">Designing for agents</p>
+        <p class="side-note">HubSpot, 2025</p>
+      </div>
+      <div>
+        <p class="detail-body-text">My team shipped HubSpot's first agentic setup experience: a conversation backed by specialized sub-agents that build a customer's pipeline, properties and goals as they talk. Launching it was one challenge. Scaling it across every HubSpot tier was a harder one, because edge cases that almost never showed up in testing showed up constantly with real customers.</p>
+        <br>
+        <p class="detail-body-text">A few things I believe now that I didn't before:</p>
+        <ul class="plain-list">
+          <li>Writing the prompt is design work. We worked directly with engineering on each sub-agent's prompt, and that's where the experience really got shaped.</li>
+          <li>You can't prevent every error in a non-deterministic system, so design for recovery.</li>
+          <li>Users shouldn't notice when one agent hands off to another.</li>
+          <li>The agent picking a word you'd never have approved in a spec is not automatically a bug. Getting the substance wrong is.</li>
+        </ul>
+        <a href="../leading-teams/" class="text-link">More on the agentic setup launch <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROTOTYPING -->
+  <div class="detail-section reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">Prototyping, still</p>
+        <div class="tool-tags">
+          <span class="tool-tag">Claude Code</span>
+          <span class="tool-tag">GitHub Pages</span>
+          <span class="tool-tag">Figma MCP</span>
+        </div>
+      </div>
+      <div>
+        <p class="detail-body-text">I still build. When a direction is hard to explain, a working prototype ends the debate faster than a deck does, especially for conversational and agentic flows that Figma can't really show. I also build small internal tools when a leadership problem keeps coming back. This site counts too. I built it with Claude Code.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EARLIER -->
+  <div class="detail-section earlier reveal">
+    <div class="two-col">
+      <div>
+        <p class="two-col-label">Earlier experiments</p>
+        <p class="side-note">2024</p>
+      </div>
+      <div>
+        <p class="detail-body-text">Before Claude Code took over most of my day, NotebookLM was where I started. I used it for literature reviews where I needed answers tied to specific sources, for audio overviews that let a whole team absorb a strategy on a commute, and for running the product principles workshop without the workshop. Gemini helped turn messy notes into storyboard scripts, and Midjourney gave us storyboard frames when there was no budget for an illustrator. Some of that I still do. Most of it has moved into Claude Code and the skill library.</p>
+      </div>
+    </div>
+    <div class="image-pair earlier-images">
+      <div class="rounded-image"><img src="../media/lit-review.png" alt="Literature review in NotebookLM" class="full-image" loading="lazy"></div>
+      <div class="rounded-image"><img src="../media/storyboard.png" alt="AI-generated storyboard frames" class="full-image" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- EXPLORE MORE WORK -->
+  <section class="explore-more">
+    <div class="explore-more-header">
+      <h2 class="explore-more-label">More work</h2>
+      <div class="explore-more-nav">
+        <button class="explore-nav-btn prev" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="explore-nav-btn next" aria-label="Next project">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+    <div class="explore-more-grid">
+
+      <a href="../showing-the-work/" class="portfolio-card reveal">
+        <img src="../media/strategic-connection.png" alt="" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Sample</span></div>
+            <span class="portfolio-card-date">2026</span>
+          </div>
+          <h2 class="portfolio-card-title">Showing the work</h2>
+        </div>
+      </a>
+
+      <a href="../leading-teams/" class="portfolio-card reveal">
+        <img src="../media/leadership.jpg" alt="" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Leadership</span></div>
+            <span class="portfolio-card-date">2019 – Now</span>
+          </div>
+          <h2 class="portfolio-card-title">Leading teams</h2>
+        </div>
+      </a>
+
+      <a href="../hosting-crit/" class="portfolio-card reveal">
+        <img src="../media/post-its-scaled.jpg" alt="" loading="lazy">
+        <div class="portfolio-card-overlay"></div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-top">
+            <div class="portfolio-card-cats"><span class="cat-tag">Culture</span></div>
+            <span class="portfolio-card-date">2016</span>
+          </div>
+          <h2 class="portfolio-card-title">Workshop Sessions</h2>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-meta">
+    <p>Words by me, edited with Claude. Built with Claude Code in Ghostty. Set in Gloock and DM Sans.</p>
+    <p>Last updated November 2026</p>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-copyright">© — 2026</div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

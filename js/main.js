@@ -47,7 +47,7 @@ updateStackingCards(window.scrollY);
 // Hero scroll button
 const scrollBtn = document.querySelector('.hero-scroll-arrow');
 if (scrollBtn) {
-  scrollBtn.addEventListener('click', () => lenis.scrollTo('#work'));
+  scrollBtn.addEventListener('click', () => lenis.scrollTo('#now'));
 }
 
 // Smooth nav anchor scrolling via Lenis
@@ -233,4 +233,19 @@ document.querySelectorAll('.video-player').forEach(player => {
     }
   });
   video.addEventListener('ended', () => player.classList.remove('playing'));
+});
+
+// Copy email to clipboard
+document.querySelectorAll('.copy-email').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(btn.dataset.email);
+      const label = btn.textContent;
+      btn.textContent = 'Copied';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = label; btn.classList.remove('copied'); }, 1800);
+    } catch (e) {
+      window.location.href = 'mailto:' + btn.dataset.email;
+    }
+  });
 });
